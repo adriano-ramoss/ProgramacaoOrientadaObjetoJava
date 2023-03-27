@@ -1,6 +1,6 @@
 package ExerciciosPOO;
 
-public class Carros {
+class Carros {
 	String cor = "";
 	String modelo = "";
 	int capacidadeTanque = 0;
@@ -37,8 +37,9 @@ public class Carros {
 	int getCapacidadeTanque() { //Devolve o valor de CapacidadeTanque guardado no set
 		return capacidadeTanque;
 	}
-	double TotalValorTanque() {
-		return capacidadeTanque = capacidadeTanque * ValorCombustivel;
+	double TotalValorTanque(double valorCombustivel) {
+		return capacidadeTanque * valorCombustivel;
 	}
+	
 
 }
